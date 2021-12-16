@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!--for responsive webpage-->
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta charset="utf-8">
+    <title>login / signup form</title>
+    <!--external style sheet -->
+    <link rel="stylesheet" href="./src/main.css">
+    <!--fonts family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!--login form-->
+      <form class="form " action="" id="login">
+           <h1 class="form__tittle">Login</h1>
+           <!--div for error message-->
+           <div class="form__message form__message--error">
+
+           </div>
+           <!--div for username textbox-->
+           <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message">
+                <!-- this is an error message -->
+                </div>
+           </div>
+           <!--div for password textbox-->
+           <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="password">
+                <div class="form__input-error-message">
+                </div>
+           </div>
+           <!--submit button-->
+           <button type="submit" class="form__button">continue</button>
+           <!--paragraph for forgot password sentence-->
+           <p class="form__text">
+           <a href="#">forgot your password?</a>
+         </p>
+         <!--paragraph for create account sentence-->
+         <p class="form__text">
+         <a class="form__link" id="linkCreateAccount">don't have an account? create account</a>
+       </p>
+      </form>
+      <!--create account form-->
+      <form class="form form--hidden" action="" id="createAccount">
+           <h1 class="form__tittle">Create Account</h1>
+           <!--div for error message-->
+           <div class="form__message form__message--error">
+          <!--  incorrect username/password combination.-->
+           </div>
+           <!--div for username textbox-->
+           <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message">
+                <!-- this is an error message -->
+                </div>
+           </div>
+           <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message">
+                <!-- this is an error message -->
+                </div>
+           </div>
+           <!--div for password textbox-->
+           <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="password">
+                <div class="form__input-error-message">
+                </div>
+           </div>
+           <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm Password">
+                <div class="form__input-error-message">
+                </div>
+           </div>
+           <!--submit button-->
+           <button type="submit" class="form__button">continue</button>
+           <!--paragraph for forgot password sentence-->
+         <!--paragraph for create account sentence-->
+         <p class="form__text">
+         <a class="form__link" id="linkLogin">Arleady have an account? Sign in</a>
+       </p>
+      </form>
+    </div>
+    <!-- javascripts plugins -->
+   <script src = "./src/main.js"> </script>
+  </body>
+</html>
